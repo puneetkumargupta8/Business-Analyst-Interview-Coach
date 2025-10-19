@@ -1,0 +1,5 @@
+{
+  "name": "Business Analyst Interview Game",
+  "description": "An interactive game designed to help aspiring business analysts practice for interviews. It uses AI to generate realistic case studies, ask relevant questions, and provide feedback on user answers, simulating a real interview experience.",
+  "requestFramePermissions": []
+}
