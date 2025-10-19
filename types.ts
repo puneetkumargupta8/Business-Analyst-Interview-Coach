@@ -19,13 +19,21 @@ export type Domain =
   | 'Telecommunications';
 
 export type InterviewType = 
+  // Business & Product
   | 'Case Study'
-  | 'Behavioral Questions'
   | 'Product Management'
   | 'Requirement Gathering'
-  | 'User Acceptance Testing (UAT)'
+  // Technical
+  | 'System Design'
+  | 'Data Structures & Algorithms (DSA)'
   | 'Technical Questions (SQL, API, etc.)'
+  // Process & Methodology
+  | 'Agile / Scrum Methodology'
+  | 'User Acceptance Testing (UAT)'
+  // Behavioral
+  | 'Behavioral Questions'
   | 'Situational Judgement Tests';
+
 
 export interface ConversationTurn {
   question: string;

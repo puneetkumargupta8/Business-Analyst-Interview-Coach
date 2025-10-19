@@ -11,6 +11,10 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      background-color: #171717; /* neutral-900 */
+      background-image: radial-gradient(circle at top, rgba(64, 224, 132, 0.1), transparent 40%),
+                        radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.1), transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(233, 30, 99, 0.05), transparent 60%);
     }
   </style>
   <script type="importmap">
@@ -35,11 +39,16 @@
           },
           animation: {
             'fade-in': 'fadeIn 0.5s ease-in-out',
+            'glow': 'glow 2s ease-in-out infinite alternate',
           },
           keyframes: {
             fadeIn: {
               '0%': { opacity: '0', transform: 'translateY(10px)' },
               '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            glow: {
+              'from': { 'box-shadow': '0 0 10px -5px #4ade80' },
+              'to': { 'box-shadow': '0 0 20px 0px #4ade80' },
             },
           },
         },
